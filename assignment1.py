@@ -27,7 +27,7 @@ course="python"
 fees=5000
 print("welcome to %s your course is %s and its fees is %d"%(s,course,fees))
 
-#question6
+#question65894
 
 name="Tony Stark"
 salary=1000000
