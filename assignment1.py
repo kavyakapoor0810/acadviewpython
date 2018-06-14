@@ -3,7 +3,6 @@
 print ("hello my name is kavya")
 
 #question2
-
 a= "acad"
 b= "view"
 print (a+b)
@@ -19,7 +18,7 @@ print(z)
 
 #question4
 
-print("let\'s get started")
+print('let\'s get started')
 
 #question5
 
