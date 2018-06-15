@@ -36,6 +36,37 @@ d={'name' : k,
    'marks' : l}
 print(d)
 
+#question2
+#import operator
+j={'name0': 'j',
+   'marks0': 30,
+   'name1' : 'a' ,
+   'marks1' : 20,
+   'name2': 'b',
+   'marks2': 35,
+   'name3': 'c',
+   'marks3': 29,
+   'name4': 'd',
+   'marks4': 50,
+   'name5': 'e',
+   'marks5': 43,
+   'name6': 'f',
+   'marks6': 37,
+   'name7' : 'g' ,
+   'marks7' : 47,
+   'name8': 'h',
+   'marks8': 35,
+   'name9': 'i',
+   'marks9': 48
+   }
+print(sorted(j))
+#sorted_j = sorted(j.items(), key=operator.itemgetter(1))
+#print(j)
+
+#print(sorted(j))
+#for key, value in sorted(j.iteritems(), key=lambda (k,v): (v,k)):
+ #   print ("%s: %s" % (key, value))
+
 #question3 MISSISSIPPI
 
 m=['m','i','s','s','i','s','s','i','p','p','i']
@@ -58,6 +89,9 @@ for i in x:
       z={'name' : name ,
          'marks' : marks}
       print(z)
+      
+
+
 
 
 
@@ -65,11 +99,11 @@ name=input("enter you name")
 marks=input("enter your marks")
 e={'name' : name,'marks' : marks}
 for i in range(10):
-
-print(e)
-'''
-
-
+    if name not in e:
+        i=i+1
+    else:
+        print("name there")
+    print(e)'''
 
 
 
