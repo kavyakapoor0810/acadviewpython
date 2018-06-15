@@ -50,7 +50,7 @@ x={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 odd=0
 even=0
 for y in x:
-        if not (y % 2):
+        if not (y % 2) :
     	     even=even+1
         else:
     	     odd=odd+1
