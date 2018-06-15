@@ -25,7 +25,7 @@ print('let\'s get started')
 s="acadview"
 course="python"
 fees=5000
-print("welcome to %s your course is %s and its fees is %d"%(s,course,fees))
+print("welcome to %s your course is %s and its fees is %d "%(s,course,fees))
 
 #question65894
 
