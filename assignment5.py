@@ -22,11 +22,17 @@ c=input("enter age of 1st person")
 d=input("enter age of 2nd person")
 e=input("enter age of 3rd person")
 if(c>=d and c>=e):
-    print("c is gratest among all")
+    print("c is oldest among all")
 elif(d>=c and d>=e):
-    print("d is gratest among all")
+    print("d is oldest among all")
 else:
-    print("e is gratest among all")
+    print("e is oldest among all")
+if (c < d and c <e):
+    print("c is youngest among all")
+elif (d <c and d< e):
+    print("d is youngest among all")
+else:
+    print("e is youngest among all")
 
 #question4
 
