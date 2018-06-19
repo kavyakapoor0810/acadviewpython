@@ -1,14 +1,17 @@
 #question1
-'''for i in range(1,11):
+
+for i in range(1,11):
     x=input("enter your name")
     print(x)
 
 #question2
+
 b=5
 while(b>0):
     print(b)
 
 #question3
+
 l=[]
 k=[]
 for i in range(1,5):
@@ -19,6 +22,7 @@ print(l)
 print(k)
 
 #question4
+
 s=[1,"sakshi",3.5,2,5,"hello",2.4,2.6,"hey"]
 p=[]
 q=[]
@@ -36,6 +40,7 @@ print("String: ", q)
 print("Float: ", r)
 
 #question5
+
 even=[]
 odd=[]
 for I in range(1,101):
@@ -47,11 +52,12 @@ print("The even list",even)
 print("The odd list",odd)
 
 #question6
+
 for I in range(0,4):
     for I in range(0,I+1):
         print("*",end="")
     print()
-'''
+
 #question7
 
 D={'name':'kav',
