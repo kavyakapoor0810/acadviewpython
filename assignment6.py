@@ -6,9 +6,9 @@ for i in range(1,11):
 
 #question2
 
-b=5
-while(b>0):
-    print(b)
+#b=5
+#while(b>0):
+    #print(b)
 
 #question3
 
