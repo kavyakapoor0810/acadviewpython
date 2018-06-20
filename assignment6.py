@@ -1,5 +1,5 @@
 #question1
-'''
+
 for i in range(1,11):
     x=input("enter your name")
     print(x)
@@ -57,7 +57,7 @@ for I in range(0,4):
     for I in range(0,I+1):
         print("*",end="")
     print()
-    '''
+
 #question7
 
 D={'k': 20,
