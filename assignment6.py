@@ -1,5 +1,5 @@
 #question1
-
+'''
 for i in range(1,11):
     x=input("enter your name")
     print(x)
@@ -57,33 +57,20 @@ for I in range(0,4):
     for I in range(0,I+1):
         print("*",end="")
     print()
-
+    '''
 #question7
 
-D={'name':'kav',
-   'age':20}
-for i in D:
-    D.get(i)
-    print(i)
+D={'k': 20,
+   'r': 30}
+for key in D:
+    print(key,D[key])
 
 #question8
 
-e=[]
-for i in range(0,5):
-    f=int(input("enter number"))
-    e.append(f)
-print(e)
-z=print("enter index of number to be deleted: ")
-#e = [x for x in e if x != z]
-
-try:
-    g=e.index(z)
-    del e[g]
-except:
-    pass
-print(e)
-
-
-
-
+e=['kavya','smaily','isha','shubham','uday']
+f=input("enter name")
+for i in e:
+    if i==f:
+        e.remove(i)
+        print(e)
 
