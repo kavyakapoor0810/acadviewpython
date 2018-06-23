@@ -44,6 +44,32 @@ print("Fahrenhiet :" ,f)
 
 #question4
 
+class Movie():
+    def _init_(self, name, artist, year, ratings):
+        self.name = name
+        self.artist = artist
+        self.year = year
+        self.ratings = ratings
+
+    def display(self):
+         print("The", self.name, "starring", self.artist, "has been released                     in", self.year,
+                 "with the ratings", self.ratings)
+
+    def update(self):
+         name = input("Enter movie name: ")
+self.name = name
+artist = input("Enter artist name: ")
+self.artist = artist
+year = input("Enter year of release: ")
+self.year = year
+ratings = input("Enter ratings: ")
+self.ratings = ratings
+print("The", self.name, "starring", self.artist, "has been released in", self.year, "with the ratings", self.ratings)
+
+movie = Movie('IronMan', 'Robert Downey Jr', 2008, 7.9)
+movie.display()
+movie.update()
+
 
 #question5
 
