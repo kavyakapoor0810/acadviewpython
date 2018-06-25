@@ -25,21 +25,55 @@ print(a.f(),b.f()) #A B
 print(a.g(),b.g()) #A B
 
 #question3
-
-class cop()
-    def __init__(self,name,age,work_experience,designation):
-        self.n=name
-        self.a=age
-        self.w_e=work_experience
-        self.d=designation
-
+'''
+class Cop():
     def add(self):
-        n=input("enter your name")
-        a=input("enter age")
-        w_e=input("enter your work experience")
-        d=input("enter designation")
+        self.name=input("enter name :")
+        self.age=int(input("enter age :"))
+        self.work_experience=input("work experience :")
+        self.designation=input("designation :")
 
     def update(self):
-        pass
-class Mission(cop)
+        self.name = input("enter your name")
+        self.age = int(input("enter age"))
+        self.work_experience = input("enter your work experience")
+        self.designation = input("enter designation")
 
+    def display(self):
+        print(self.name,self.age,self.work_experience,self.designation)
+class Mission(Cop):
+    def mission_details(self):
+        self.details=input("enter mission name :")
+    def mission_display(self):
+        print("name of officer is %s whose age is %d with work experience %s and designation of %s going on mission %s" % (self.name,self.age
+                                                                                                        ,self.work_experience,self.designation,self.mission_details()))
+C=Cop()
+M=Mission()
+M.add()
+M.update()
+M.display()
+M.mission_display()
+'''
+#question4
+
+class shape():
+    def input(self):
+        self.l = int(input("enter length"))
+        self.b = int(input("enter breadth"))
+class rectangle(shape):
+    def Area(self):
+        self.input()
+        self.A=self.l*self.b
+        print("AREA OF RECTANGLE : ",self.A)
+class square(shape):
+    def Area(self):
+        self.input()
+        if(self.l==self.b):
+             self.B=self.l*self.b
+             print("AREA OF SQUARE : ",self.B)
+        else:
+            print("enter same l & b")
+r=rectangle()
+s=square()
+r.Area()
+s.Area()
