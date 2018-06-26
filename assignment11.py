@@ -1,8 +1,8 @@
 #question1
+
 import threading
 from threading import Thread
 import time
-'''
 class mythread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
@@ -25,7 +25,7 @@ class mythread1(threading.Thread):
             print(i)
 thr=mythread1()
 thr.start()
-'''
+
 #question3
 
 class mythread3(threading.Thread):
@@ -36,7 +36,7 @@ class mythread3(threading.Thread):
         l = [1, 2, 3, 4, 5]
         for i in l:
             print(i)
-            r=[2,4,6,8,10]
+            r=[0.2,0.4,0.6,0.8,0.10]
             for j in r:
                 time.sleep(j)
 
@@ -48,11 +48,11 @@ thread.start()
 class mythread2(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
-    def factorial(n):
+    def factorial(n=5):
         if n == 0:
             return n
         else:
             return n * factorial(n - 1)
-        print(factorial(5))
+            print(n)
 thre=mythread2()
 thre.start()
