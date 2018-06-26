@@ -3,6 +3,7 @@
 import threading
 from threading import Thread
 import time
+
 class mythread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
@@ -36,7 +37,7 @@ class mythread3(threading.Thread):
         l = [1, 2, 3, 4, 5]
         for i in l:
             print(i)
-            r=[0.2,0.4,0.6,0.8,0.10]
+            r=[2,4,6,8,10]
             for j in r:
                 time.sleep(j)
 
@@ -45,14 +46,14 @@ thread.start()
 
 #question4
 
+import math
+
 class mythread2(threading.Thread):
-    def __init__(self):
+    def __init__(self,i):
         threading.Thread.__init__(self)
-    def factorial(n=5):
-        if n == 0:
-            return n
-        else:
-            return n * factorial(n - 1)
-            print(n)
-thre=mythread2()
+        self.i=i
+    def run(self):
+        print(math.factorial(self.i))
+i=int(input("enter no. for which u want to calc factorial"))
+thre=mythread2(i)
 thre.start()
