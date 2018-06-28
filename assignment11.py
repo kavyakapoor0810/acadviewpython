@@ -10,7 +10,7 @@ class mythread(threading.Thread):
 
     def run(self):
         time.sleep(5)
-         print("Value after 5seconds")
+        print("Value after 5seconds")
 th=mythread()
 th.start()
 
@@ -28,17 +28,20 @@ thr.start()
 
 #question3
 
+l=[1,2,3,4,5]
+t = [2, 4, 6, 8, 10]
 class mythread3(threading.Thread):
-    l = [2, 4, 6, 8, 10]
-    def __init__(self,sleep):
+
+    def __init__(self,i):
         threading.Thread.__init__(self)
-        self.sleep=sleep
+        self.h=i
     def run(self):
-        for i in range(1,5):
-            for j in self.l:
-                print(i)
-                time.sleep(1)
-thread=mythread3([1,2,3,4,5])
+        print("done")
+for i,j in zip(l,t):
+    time.sleep(j)
+
+    print(i)
+thread=mythread3(i)
 thread.start()
 
 #question4
@@ -54,18 +57,4 @@ i=int(input("enter no. for which u want to calc factorial"))
 thre=mythread2(i)
 thre.start()
 
-import time
-import threding
-class Mythread(threading.Thread):
-    def __init__(self,l,t):
-        self.l=l
-        self.t=t
-        threading.Thread.__init__(self)
-    def run(self):
-        for i,j in zip(l,t):
-            ptint(i)
-            time.sleep(j)
-l=[1,2,3,4,5]
-t=[2,4,6,8,10]
-MM=Mythread(l,t)
-MM.start()
+
