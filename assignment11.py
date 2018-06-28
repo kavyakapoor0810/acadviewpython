@@ -50,7 +50,7 @@ import math
 class mythread2(threading.Thread):
     def __init__(self,i):
         threading.Thread.__init__(self)
-        self.a=i
+        self.i=i
     def run(self):
         print(math.factorial(self.i))
 i=int(input("enter no. for which u want to calc factorial"))
