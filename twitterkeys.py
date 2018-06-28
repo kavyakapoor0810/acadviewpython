@@ -1,4 +1,0 @@
-Consumer_Key ="gzJquXqFw7NjlFJnOwsCy122u"
-Consumer_Secret ="kdzefWi4Mtth2rVeoE96BjnXD2J29lx1gDjiSjESwUjgicS4eZ"
-Access_Token = "1011804483339341825-6Ng2c5i4OIBxOwFF8qt40zY8k4FVZ1"
-Access_Token_Secret ="PW6tJ3jHgbPFQWpqpgDG7YodNdDkqZUQco6SxT4XfwlW9"
