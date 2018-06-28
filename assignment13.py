@@ -56,7 +56,7 @@ except ImportError:
     print("import file does not exit")
 
 #question6
-'''
+
 class AgeToSmallError(Exception):
     pass
 try:
@@ -64,25 +64,9 @@ try:
     if(a<18):
         raise AgeToSmallError
         print("you are not eligible")
-    return a
 except ValueError:
     print("please enter int value")
 else:
     print("you are eligible")
 finally:
     print("thankyou")
-'''
-
-age = None
-while age is None:
-    input_value = input("Please enter your age: ")
-    try:
-        # try and convert the string input to a number
-        age = int(input_value)
-    except ValueError:
-        # tell the user off
-        print("{input} is not a number, please enter a number only".format(input=input_value))
-if age >= 18:
-    print("You are able to vote in the United States!")
-else:
-    print("You are not able to vote in the United States.")
