@@ -59,14 +59,18 @@ except ImportError:
 
 class AgeToSmallError(Exception):
     pass
-try:
-    a=int(input("enter age"))
-    if(a<18):
-        raise AgeToSmallError
-        print("you are not eligible")
-except ValueError:
-    print("please enter int value")
-else:
-    print("you are eligible")
-finally:
-    print("thankyou")
+a=0
+while(a<18):
+    try:
+        a=int(input("enter age"))
+        if(a<18):
+            raise AgeToSmallError
+            print("you are not eligible")
+    except AgeToSmallError:
+        print("your age is less than 18")
+    except ValueError:
+        print("please enter int value")
+    else:
+        print("you are eligible")
+    finally:
+        print("thankyou")
