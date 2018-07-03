@@ -1,5 +1,13 @@
-#question2
+#question1
 
+import re
+A = []
+emails = "zuck26@facebook.com  page33@google.com  jeff42@amazon.com"
+a = re.findall("([\w\d]{1,22}[\w]{1,22}[\w]{1,5})", emails)
+A.extend((tuple(a[0:3]), tuple(a[3:6]), tuple(a[6:9])))
+print(A)
+
+#question2
 
 import re
 t = "Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better."
