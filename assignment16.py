@@ -33,8 +33,8 @@ a.execute('''CREATE TABLE Authors
     Last_Name        CHAR(50)             NOT NULL)''')
 print("tables created")
 
-a.execute("INSERT INTO Books(Book_ID,Title_ID,Location,Genre) VALUES(1,20,'Chandigarh','Kavya')")
-a.execute("INSERT INTO Books(Book_ID,Title_ID,Location,Genre) VALUES(2,25,'Delhi','Kashish')")
+a.execute("INSERT INTO BOOKS(Book_ID,Title_ID,Location,Genre) VALUES(1,20,'Chandigarh','Kavya')")
+a.execute("INSERT INTO BOOKS(Book_ID,Title_ID,Location,Genre) VALUES(1,25,'Delhi','Kashish')")
 a.execute("INSERT INTO Titles(Titles_ID,Title,ISBN,Publisher_ID,Publication_Year) VALUES('1','acadview python','432-5452-344',1453,'2018')")
 a.execute("INSERT INTO Titles(Titles_ID,Title,ISBN,Publisher_ID,Publication_Year) VALUES('1','acadview machine learning','342-5343-346',1233,'2018')")
 a.execute("INSERT INTO Publishers(Publishers_ID, Name,Street_Address,Zip_Code_ID) VALUES('432-5452-344','Kavya Kapoor','Chandigarh',403106)")
