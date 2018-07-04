@@ -1,31 +1,72 @@
+#question1
+
 import tkinter as tk
+from tkinter import *
+def destroy():
+    m.destroy()
 m=tk.Tk()
-m.title('counting seconds')
-button=tk.Button(m,text='stop',width=25,command=m.destroy)
+m.title("kav")
+var=StringVar()
+label=Label(m,textvariable=var)
+var.set("hello world")
+button=tk.Button(m,text='exit',width=25,command=destroy)
+label.pack()
 button.pack()
 m.mainloop()
 
+#question2
+
+m=tk.Tk()
+m.title("kapoor")
+def mohit():
+    var=StringVar()
+    label=Label(m,textvariable=var)
+    var.set("my name is kavya")
+    label.pack()
+button=tk.Button(m,text='display',width=35,command=mohit)
+button.pack()
+m.mainloop()
+
+#question3
+
 from tkinter import *
-master=Tk()
-w=Canvas(master,width=40,height=60)
-w.pack()
-canvas_height=200
-canvas_width=200
-y=int(canvas_height/2)
-w.create_line(0,y,canvas_width,y)
+import tkinter as tk
+s=tk.Tk()
+s.title("kapoor")
+def mo():
+    s.destroy()
+button1=tk.Button(s,text='exit',width=25,command=mo)
+button1.pack()
+def moh():
+    var1 = StringVar()
+    label1 = Label(s, textvariable=var1)
+    var1.set("my name is kavya kapoor")
+    label1.pack()
+    label2.destroy()
+button2=tk.Button(s,text='name',command=moh)
+button2.pack()
+var2 = StringVar()
+label2 = Label(s, textvariable=var2)
+var2.set("my name is kavya")
+label2.pack()
+s.mainloop()
+
+#question4
+
+from tkinter import *
+import tkinter
+import tkinter as tk
+z=tk.Tk()
+z.title("kavya kapoor")
+l1=Label(z,text='name')
+l1.grid(row=0)
+e1=Entry(z)
+e1.grid(row=0,column=3)
+def mohitsh():
+    e=e1.get()
+    print(e)
+    z.destroy()
+b1=Button(z,text='enter',width=25,command=mohitsh)
+b1.grid(row=4,column=4)
+
 mainloop()
-
-from tkinter import *
-master=Tk()
-var1=IntVar()
-Checkbutton(master,text='male',variable=var1).grid(row=0,sticky=W)
-var2=IntVar()
-Checkbutton(master,text='female',variable=var2).grid(row=1,sticky=W)
-mainloop()
-
-
-from tkinter import *
-master=Tk()
-Label(master,text='first name').grid(row=0)
-Label(master,text='Last name').grid(row=1)
-e1=E
