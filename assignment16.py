@@ -1,19 +1,20 @@
 #question1
 import sqlite3
 a=sqlite3.connect('test.db')
+
 a.execute(''' CREATE TABLE BOOKS
  (  BOOK_ID  INT  PRIMARY KEY  NOT NULL,
     TITLE_ID INT               NOT NULL,
     LOCATION CHAR(50)             NOT NULL,
     GENRE    CHAR(50)             NOT NULL)''')
 a.execute('''CREATE TABLE Titles
- (   Titles_ID      CHAR      NOT NULL,
+ (   Titles_ID      CHAR PRIMARY KEY      NOT NULL,
     Title         CHAR                  NOT NULL,
     ISBN          CHAR(50)              NOT NULL,
     Publisher_ID  INT        NOT NULL,
     Publication_Year     CHAR(50))''')
 a.execute('''CREATE TABLE Publishers
-   ( Publishers_ID      CHAR       NOT NULL,
+   ( Publishers_ID      CHAR PRIMARY KEY      NOT NULL,
     Name              CHAR(50)             NOT NULL,
     Street_Address    CHAR(50)             NOT NULL,
     Zip_Code_ID       INT      NOT NULL)''')
@@ -32,9 +33,8 @@ a.execute('''CREATE TABLE Authors
     Middle_Name     CHAR(50),
     Last_Name        CHAR(50)             NOT NULL)''')
 print("tables created")
-
 a.execute("INSERT INTO BOOKS(Book_ID,Title_ID,Location,Genre) VALUES(1,20,'Chandigarh','Kavya')")
-a.execute("INSERT INTO BOOKS(Book_ID,Title_ID,Location,Genre) VALUES(1,25,'Delhi','Kashish')")
+a.execute("INSERT INTO BOOKS(Book_ID,Title_ID,Location,Genre) VALUES(2,25,'Delhi','Kashish')")
 a.execute("INSERT INTO Titles(Titles_ID,Title,ISBN,Publisher_ID,Publication_Year) VALUES('1','acadview python','432-5452-344',1453,'2018')")
 a.execute("INSERT INTO Titles(Titles_ID,Title,ISBN,Publisher_ID,Publication_Year) VALUES('1','acadview machine learning','342-5343-346',1233,'2018')")
 a.execute("INSERT INTO Publishers(Publishers_ID, Name,Street_Address,Zip_Code_ID) VALUES('432-5452-344','Kavya Kapoor','Chandigarh',403106)")
