@@ -24,6 +24,7 @@ print("Shape",C.shape)
 print("Sum",np.sum(C))
 
 #question4
+from math import exp
 
 def kav(k):
     return (1/(1+(np.exp(-k))))
