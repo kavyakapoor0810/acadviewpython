@@ -21,11 +21,16 @@ print(df.head(10))
 print("mean",df.mean)
 print("describe",df.describe())
 print(df.tail(10))
+print("LOCATION")
+print(df['Location'])
+
+print(df['Location'].describe)
+
+print("MINTEMP")
 print(df['MinTemp'].describe())
-
-
 print("Count ",df['MinTemp'].count())
 print("Min ",df['MinTemp'].min())
+print("Var ",df['MinTemp'].var())
 print("Max ",df['MinTemp'].max())
 print("Mean ",df['MinTemp'].mean())
 print("Median ",df['MinTemp'].median())
